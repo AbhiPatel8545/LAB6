@@ -155,14 +155,3 @@ These results support the claim that low-rank adaptation can achieve near-full f
 - **Hyperparameter Tuning:** A fixed learning rate (`1e-3` for LoRA, `5e-5` for Full FT) was used across ranks without per-rank grid search.
 - **Sample Size & Seeds:** Results reflect 3 random seeds on 600 training examples under a fixed 120-step budget.
 
-## GitHub Submission Checklist
-
-- [x] Public repository, or private repository shared with `hossein.pourmodheji@humber.ca`.
-- [x] `.gitignore` committed before code commits.
-- [x] `README.md` includes prediction, all measured results, hardware, figures, and reproduction instructions.
-- [x] `requirements.txt` included.
-- [x] Custom answer-only loss and custom LoRA implementation without calling `peft` inside `LoRALinear`.
-- [x] Equivalence checks against `peft` and zero-init assertions pass.
-- [x] All three seeds reported for every experiment.
-- [x] Results figure (`results/accuracy_vs_trainable_parameters.png`) saved and embedded.
-- [x] At least three meaningful git commits.
